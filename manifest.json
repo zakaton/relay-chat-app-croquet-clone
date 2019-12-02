@@ -1,0 +1,25 @@
+{
+    "name" : "Relay Chat Croquet Clone",
+    "version" : "1.0",
+    "manifest_version" : 2,
+    "description" : "a shameless copy of the Relay Chat app",
+
+    "background" : {
+        "scripts" : ["background.js"]
+    },
+    "browser_action" : {
+        "default_icon" : "icon.png"
+    },
+
+    "content_scripts" : [
+        {
+            "matches" : ["http://*/*", "https://*/*"],
+            "js" : ["croquet.js", "Model.js", "View.js", "content.js"]
+        }
+    ],
+
+    "permissions" : ["activeTab"],
+    "icons": { "16": "icon.png",
+        "48": "icon.png",
+       "128": "icon.png" }
+}
