@@ -8,7 +8,7 @@ const html = `
         #croquetviewCount { float: right; }
         #croquettextIn,#croquetsendButton { flex: 1 0 0; }
         #croquettextOut { height: calc(100% - 160px); flex: 1 100%;  overflow: auto }
-        #croquettextIn { flex-grow: 100 }
+        #croquettextIn { flex-grow: 100; font: 20px sans-serif; }
         #croquetsendButton { background-color: #fff; border: 2px solid #000 }
         
         #widgets { top: 70px; right: 14px; }
